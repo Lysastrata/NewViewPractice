@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/numbers6"
+    tools:context="com.tries.tali.multiuseapp.CalculatorActivity">
+
+    <EditText
+        android:id="@+id/numberEntryTextEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@color/moneyButton"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/moneyText"
+        android:textColorLink="#30342d"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="41dp"
+        android:backgroundTint="@color/moneyButton"
+        android:text="Add"
+        android:textColor="@color/moneyText"
+        app:layout_constraintBottom_toTopOf="@+id/multiplyButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/subtractButton" />
+
+    <Button
+        android:id="@+id/subtractButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginRight="64dp"
+        android:backgroundTint="@color/moneyButton"
+        android:text="Subtract"
+        android:textColor="@color/moneyText"
+        app:layout_constraintBottom_toTopOf="@+id/divideButton"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="41dp"
+        android:backgroundTint="@color/moneyButton"
+        android:text="Multiply"
+        android:textColor="@color/moneyText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/divideButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="93dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="64dp"
+        android:backgroundTint="@color/moneyButton"
+        android:text="Divide"
+        android:textColor="@color/moneyText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="#216c2a"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberEntryTextEdit"
+        app:layout_constraintVertical_bias="0.659" />
+</android.support.constraint.ConstraintLayout>

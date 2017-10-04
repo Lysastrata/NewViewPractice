@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f51b5"
+    tools:context="com.tries.tali.multiuseapp.MainActivity">
+
+    <Button
+        android:id="@+id/ninjaGoldButton"
+        style="@style/Base.Widget.AppCompat.ImageButton"
+        android:layout_width="164dp"
+        android:layout_height="239dp"
+        android:layout_marginRight="180dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/gold"
+        android:text="Ninja Gold"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calculatorButton"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="164dp"
+        android:layout_height="239dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/numbers6"
+        android:text="Calculator"
+        android:textColor="#2f6611"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/musicButton"
+        android:layout_width="164dp"
+        android:layout_height="239dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Music"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ninjaGoldButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="164dp"
+        android:layout_height="239dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/musicButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
